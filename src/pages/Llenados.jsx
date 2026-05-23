@@ -55,11 +55,6 @@ export default function Llenados({ store }) {
     }).reduce((s, l) => ({ litros: s.litros + l.litros, costo: s.costo + l.costo }), { litros: 0, costo: 0 });
   }, [data.llenados]);
 
-  const tractorOpts = [
-    { value: '', label: 'Todos los tractores' },
-    ...data.tractores.map(t => ({ value: t.id, label: `${t.placa} — ${t.marca} ${t.modelo}` })),
-  ];
-
   const tractorFormOpts = [
     { value: '', label: '— Selecciona un tractor —' },
     ...data.tractores.map(t => ({ value: t.id, label: `${t.placa} — ${t.marca} ${t.modelo}` })),

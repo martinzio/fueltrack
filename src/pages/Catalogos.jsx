@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { T, Card, Badge, Btn, Modal, Input, Select, SectionHeader, EmptyState } from '../components/UI';
+import { T, Card, Badge, Btn, Modal, Input, SectionHeader, EmptyState } from '../components/UI';
 
 const COLORES = ['#F59E0B','#3B82F6','#10B981','#EF4444','#A855F7','#EC4899','#06B6D4','#F97316','#84CC16','#14B8A6'];
 

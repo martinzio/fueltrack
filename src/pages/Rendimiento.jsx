@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
-import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, BarChart, Bar, CartesianGrid } from 'recharts';
-import { T, Card, Badge, StatCard, SectionHeader, fmtNum, fmtDate, fmtMoney } from '../components/UI';
+import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, BarChart, Bar } from 'recharts';
+import { T, Card, Badge, SectionHeader, fmtNum, fmtMoney } from '../components/UI';
 
 const CustomTooltip = ({ active, payload, label }) => {
   if (!active || !payload?.length) return null;
@@ -17,7 +17,7 @@ const CustomTooltip = ({ active, payload, label }) => {
 };
 
 export default function Rendimiento({ store }) {
-  const { data, getRendimientoVehiculo } = store;
+  const { data } = store;
 
   const rendByTractor = useMemo(() =>
     data.tractores.map(t => {

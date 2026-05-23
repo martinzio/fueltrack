@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, LineChart, Line } from 'recharts';
-import { T, Card, StatCard, Badge, fmtNum, fmtDate, fmtMoney } from '../components/UI';
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
+import { T, Card, StatCard, fmtNum, fmtDate, fmtMoney } from '../components/UI';
 
 export default function Dashboard({ store }) {
   const { data, getResumenFlota, getRendimientoVehiculo } = store;
