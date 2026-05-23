@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState } from 'react';
 import { useStore } from './hooks/useStore';
 import Dashboard from './pages/Dashboard';

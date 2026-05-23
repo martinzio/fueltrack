@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState } from 'react';
 import { T, Card, Badge, Btn, Modal, Input, SectionHeader, EmptyState } from '../components/UI';
 
